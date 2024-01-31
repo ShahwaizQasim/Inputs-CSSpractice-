@@ -1,0 +1,56 @@
+::selection{
+    color: white;
+    background-color: #000;
+}
+.my-input{
+    width: 250px;
+    border: 2px solid #999;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.my-input > img{
+    height:100%;
+    width: 25px;
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+.my-input > input{
+    height: 30px;
+    width: 80%;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    position: relative;
+    bottom: 3px;
+    right: 5px;
+}
+                           /* div pr focus ky sath within bi lagyga */
+
+.my-input:focus-within{
+    width: 400px;
+    border: 2px solid blue;
+    transform: scale(1.1);
+    margin-left: 20px;
+}
+.input{
+    margin-top: 20px;
+    height: 25px;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+    transition: 0.5s;
+    color: blue;
+}
+
+                                  /* input pr sirf focus bi lag sakta hai */
+.input:focus{
+    width: 400px;
+    transform: scale(1.1);
+    border: 2px solid red;
+    margin-left: 20px;
+}
+.input::placeholder{
+    color: navy;
+}
